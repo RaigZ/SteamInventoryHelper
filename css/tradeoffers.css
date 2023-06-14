@@ -44,20 +44,6 @@ a.accept-bt:hover {
     color: #aaa;
 }
 
-.sponsor {
-    float: right;
-    max-width: 50%;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    min-width: 50%;
-    min-height: 35px;
-}
-
-.sponsor img {
-    max-width: 100%;
-    display: none;
-}
-
 .offer-price {
     float: right !important;
     margin-left: 15px;

@@ -37,12 +37,6 @@
     border-radius: 4px;
 }
 
-.sort a.sponsor {
-    background: none;
-    padding: 0;
-    margin: 0;
-}
-
 .sort legend {
     text-align: center;
     padding: 5px 10px;

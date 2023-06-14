@@ -22,7 +22,6 @@ var BaseSIHLang = {
     autoaccept: "Accept all items automatically",
     autoadjust: "Autoadjust prices by market",
     historynoselect: "Select item",
-    sponsors: "SIH's Sponsors",
     functions: "Functions",
     externalprices: "External prices",
     info: {

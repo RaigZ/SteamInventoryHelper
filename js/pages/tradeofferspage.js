@@ -52,23 +52,6 @@ chrome.storage.sync.get({
     });
 });
 
-$(document).ready(function () {
-  setTimeout(function () {
-    // var lang = ( (window.userLanguage || detectUserLanguage()) == 'ru' ? 'ru' : 'en');
-    // $('.sponsor a').prop('href', (lang == 'ru' ? 'http://bit.ly/2dHzXL0' : 'http://bit.ly/2dlX3Fy'));
-    $('.sponsor a').prop('href', 'http://cs.money/?utm_source=SIH&utm_medium=CPM&utm_campaign=menu');
-    var sponsorImg = $('.sponsor img');
-    sponsorImg.prop('src', chrome.extension.getURL(`/assets/csmoney/big.png`));
-    sponsorImg.delay(500).fadeIn(500);
-    sponsorImg.on('load', function () {
-        chrome.runtime.sendMessage(chrome.runtime.id, {type: "adstat", data: "mto", action: "show"});
-    });
-    $('.sponsor').click(function () {
-        chrome.runtime.sendMessage(chrome.runtime.id, {type: "adstat", data: "mto", action: "click"});
-    });
-  }, 10);
-});
-
 var lastleft = 0, lasttop = 0;
 var nofSteam = function (idOffer, img, name) {
     name = name.trim();

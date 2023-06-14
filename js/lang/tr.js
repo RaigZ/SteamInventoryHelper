@@ -21,7 +21,6 @@
   autoaccept: "Otomatik kabul et",
   autoadjust: "Fiyatı otomatik olarak ayarla",
   historynoselect: "Eşya seç",
-  sponsors: "SIH's Sponsorları",
   functions: "Fonksiyonlar",
   externalprices: "Dış fiyatlar",
   info: {

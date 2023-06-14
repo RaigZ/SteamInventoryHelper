@@ -21,7 +21,6 @@
     autoaccept: "Подтверждать все предметы автоматически",
     autoadjust: "Автоматическая регулировка цены по маркету",
     historynoselect: "Выберите предмет",
-    sponsors: "Спонсоры SIH",
     functions: "Функции",
     externalprices: "Внешние цены",
     info: {

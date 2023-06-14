@@ -1381,26 +1381,6 @@ jQuery(function () {
     StopWatchingForUnload();
     ModifyItemDisplay();
     ModifySelectInventory();
-    window.setTimeout(function () {
-        _verifyUsers();
-        // var lang = ((window.userLanguage || detectUserLanguage()) == 'ru' ? 'ru' : 'en');
-        // var linkUrl = (lang == 'ru' ? 'http://bit.ly/2d1IxBP' : 'http://bit.ly/2dUkUkT');
-        var linkUrl = 'http://cs.money/?utm_source=SIH&utm_medium=CPM&utm_campaign=trade';
-        var divSponsor = $J('<fieldset class="sort"><legend>' + SIHLang.sponsors + '</legend></fieldset>');
-        divSponsor.append(`<a href="${linkUrl}" target="_blank" class="sponsor" title="CS.MONEY">
-          <img src="chrome-extension://${SIHID}/assets/csmoney/mini.png" alt="">
-        </a>`);
-        divSponsor.append(`<a href="http://34.gs/csgofast_sih" target="_blank" class="sponsor" title="CSGOFAST" style="height: 55px;">
-          <img src="chrome-extension://${SIHID}/assets/csgofast_small.png" alt="">
-        </a>`);
-        divSponsor.find('.sponsor img').on('load', function () {
-            chrome.runtime.sendMessage(SIHID, {type: "adstat", data: "to", action: "show"});
-        });
-        divSponsor.find('.sponsor').click(function () {
-            chrome.runtime.sendMessage(SIHID, {type: "adstat", data: "to", action: "click"});
-        });
-        divRight.prepend(divSponsor);
-    }, 200);
 });
 
 var econItemExp = /data-economy-item="(\w+)\/(\d+)\/(\d+)\/(\d+)"/gi;
